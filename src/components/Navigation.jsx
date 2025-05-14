@@ -15,7 +15,7 @@ const Navigation = () => {
     <>
       <NavigationBar toggleBurgerMenu={toggleBurgerMenu} />
       <div
-        className={`fixed left-0 top-0  transition duration-300 ease-in-out ${
+        className={`fixed z-1 left-0 top-0  transition duration-300 ease-in-out ${
           burgerMenu
             ? "transform-[translate3d(0vw,0,0)]"
             : "transform-[translate3d(-100vw,0,0)]"

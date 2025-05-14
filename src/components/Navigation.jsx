@@ -8,6 +8,7 @@ const Navigation = () => {
 
   const toggleBurgerMenu = () => {
     setBurgerMenu((prevBurger) => !prevBurger);
+    console.log("hi still here");
   };
 
   return (

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cal+Sans&family=DM+Serif+Text:ital@0;1&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-titles: "Lato";
-  --font-text: "Oswald";
-  --font-headings: "Ranchers";
+  --font-titles: "Cal Sans";
+  --font-text: "Archivo";
+  --font-heading: "DM Serif Text";
 
   --color-white-smoke: #f5f6f4;
   --color-rich-black: #040A10;

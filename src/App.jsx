@@ -1,3 +1,4 @@
+import ContactMini from "./components/ContactMini";
 import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import "./index.css";
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navigation />
       <Hero />
+      <ContactMini />
     </>
   );
 }

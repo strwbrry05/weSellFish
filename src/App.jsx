@@ -13,7 +13,7 @@ function App() {
       <Navigation />
       <Hero />
       <ContactMini />
-      <div className="md:mt-10 lg:mt-10 lg:mb-10 gap-[10px] md:flex md:flex-wrap lg:w-4xl lg:m-auto">
+      <div className="mb-[5em] mt-[2em] md:mt-10 lg:mt-10 lg:mb-10 gap-[10px] md:flex md:flex-wrap lg:w-4xl lg:m-auto">
         <MissionCard
           title="Our Mission"
           text="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit.Lorem ipsum dolor sit amet consectetur adipiscing elit."

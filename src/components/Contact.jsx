@@ -6,10 +6,10 @@ const Contact = () => {
   }
 
   return (
-    <div className="md:flex items-center">
+    <div className="md:flex items-center border-b-2 border-berekley-blue">
       <div
         className="font-heading text-center text-xl mb-[1.5em]
-      md:w-[40%] md:text-2xl xl:text-end "
+      md:w-[40%] md:text-2xl xl:text-end pt-[1em] "
       >
         <h3 className="text-5xl font-bold mb-[0.5em] md:text-6xl xl:mr-[1.75em]">
           Contact Us!
@@ -19,10 +19,12 @@ const Contact = () => {
         <p className="xl:mr-[4em]">weSellFish@officialemail.com</p>
         <p className="xl:mr-[7.5em]">(000)-000-0000</p>
       </div>
-      <div className="text-lg md:w-[60%]  bg-berekley-blue lg:pl-[0.5em] 2xl:pl-[5em] ">
+      <div className="text-lg md:w-[60%] bg-berekley-blue pt-[5em] pb-[5em]">
         <form
           onSubmit={submitForm}
-          className="flex flex-col xl:w-[750px] text-white-smoke p-[2em] font-text"
+          className="flex flex-col text-white-smoke p-[2em] font-text 
+          md:w-[80%] md:m-auto xl:w-2xl xl:m-0 xl:ml-[3em] 2xl:ml-[6em]
+          "
         >
           <div className="flex flex-col md:grid md:grid-rows-1 md:grid-cols-2 md:justify-center md:items-center">
             <label className="">

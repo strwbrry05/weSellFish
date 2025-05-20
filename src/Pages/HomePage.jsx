@@ -1,17 +1,13 @@
-import ContactMini from "./components/ContactMini";
-import Footer from "./components/Footer";
-import Products from "./components/Products";
-import Hero from "./components/Hero";
-import Map from "./components/Map";
-import MissionCard from "./components/MissionCard";
-import Navigation from "./components/Navigation";
-import RecentPictures from "./components/RecentPictures";
-import "./index.css";
+import React from "react";
+import Hero from "../components/Hero";
+import MissionCard from "../components/MissionCard";
+import ContactMini from "../components/ContactMini";
+import RecentPictures from "../components/RecentPictures";
+import Map from "../components/Map";
 
-function App() {
+const HomePage = () => {
   return (
     <>
-      <Navigation />
       <Hero />
       <ContactMini />
       <div className="mb-[5em] mt-[2em] md:mt-10 lg:mt-10 lg:mb-10 gap-[10px] md:flex md:flex-wrap lg:w-4xl lg:m-auto">
@@ -30,12 +26,8 @@ function App() {
       </div>
       <RecentPictures />
       <Map />
-      {/* <Products title="Our Fresh Products" number={6} />
-      <Products title="Our Frozen Products" number={24} /> */}
-      {/* <Contact /> */}
-      <Footer />
     </>
   );
-}
+};
 
-export default App;
+export default HomePage;

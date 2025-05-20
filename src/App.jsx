@@ -1,11 +1,13 @@
 import ContactMini from "./components/ContactMini";
 import Footer from "./components/Footer";
+import Products from "./components/Products";
 import Hero from "./components/Hero";
 import Map from "./components/Map";
 import MissionCard from "./components/MissionCard";
 import Navigation from "./components/Navigation";
 import RecentPictures from "./components/RecentPictures";
 import "./index.css";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
       </div>
       <RecentPictures />
       <Map />
+      {/* <Products title="Our Fresh Products" number={6} />
+      <Products title="Our Frozen Products" number={24} /> */}
+      <Contact />
       <Footer />
     </>
   );

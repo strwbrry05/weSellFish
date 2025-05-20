@@ -33,7 +33,7 @@ function App() {
       <Map />
       {/* <Products title="Our Fresh Products" number={6} />
       <Products title="Our Frozen Products" number={24} /> */}
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

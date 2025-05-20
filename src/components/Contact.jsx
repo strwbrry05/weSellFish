@@ -6,37 +6,80 @@ const Contact = () => {
   }
 
   return (
-    <div className="">
-      <div>
-        <h3>Contact Us!</h3>
-        <p>Send us a direct message</p>
-        <p>or</p>
-        <p>weSellFish@officialemail.com</p>
-        <p>(000)-000-0000</p>
+    <div className="md:flex items-center">
+      <div
+        className="font-heading text-center text-xl mb-[1.5em]
+      md:w-[40%] md:text-2xl xl:text-end "
+      >
+        <h3 className="text-5xl font-bold mb-[0.5em] md:text-6xl xl:mr-[1.75em]">
+          Contact Us!
+        </h3>
+        <p className="xl:mr-[5.25em]">Send us a direct message</p>
+        <p className="mt-4 mb-4 xl:mr-[10em]">or</p>
+        <p className="xl:mr-[4em]">weSellFish@officialemail.com</p>
+        <p className="xl:mr-[7.5em]">(000)-000-0000</p>
       </div>
-      <div>
-        <form onSubmit={submitForm} className="flex flex-col bg-berekley-blue">
-          <div>
-            <label>
-              First Name: <input name="fName" type="text" placeholder="John" />
+      <div className="text-lg md:w-[60%]  bg-berekley-blue lg:pl-[0.5em] 2xl:pl-[5em] ">
+        <form
+          onSubmit={submitForm}
+          className="flex flex-col xl:w-[750px] text-white-smoke p-[2em] font-text"
+        >
+          <div className="flex flex-col md:grid md:grid-rows-1 md:grid-cols-2 md:justify-center md:items-center">
+            <label className="">
+              First Name <span className="text-red-500 text-2xl">*</span>
+              <input
+                className="bg-white-smoke text-black w-full md:w-[85%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
+                name="fName"
+                type="text"
+                placeholder="John"
+              />
             </label>
             <label>
-              Last Name: <input name="lName" type="text" placeholder="Smith" />
+              Last Name
+              <input
+                className="bg-white-smoke text-black w-full md:w-[85%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
+                name="lName"
+                type="text"
+                placeholder="Smith"
+              />
             </label>
           </div>
-
-          <label>
-            Email:
-            <input name="email" type="text" placeholder="email@email.com" />
-          </label>
-          <label>
-            Phone Number:
-            <input name="phoneNum" type="text" placeholder="999-999-9999" />
-          </label>
-          <label>
-            First Name:
-            <textarea name="message" placeholder="type message here..." />
-          </label>
+          <div className="flex flex-col">
+            <label className="">
+              Email <span className="text-red-500 text-2xl">*</span>
+              <br />
+              <input
+                className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
+                name="email"
+                type="text"
+                placeholder="email@email.com"
+              />
+            </label>
+            <label>
+              Phone <span className="text-red-500 text-2xl">*</span>
+              <input
+                className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
+                name="phoneNum"
+                type="text"
+                placeholder="999-999-9999"
+              />
+            </label>
+            <label>
+              Message <span className="text-red-500 text-2xl">*</span>
+              <textarea
+                className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
+                name="message"
+                rows={5}
+                placeholder="type message here..."
+              />
+            </label>
+          </div>
+          <button
+            className="font-bold text-2xl border-3 rounded-lg w-45 m-auto p-1 hover:bg-light-blue hover:cursor-pointer hover:outline-2 hover:outline-offset-2 hover:outline-[var(--color-white-smoke)] hover:text-berekley-blue active:bg-light-blue"
+            type="submit"
+          >
+            Send
+          </button>
         </form>
       </div>
     </div>

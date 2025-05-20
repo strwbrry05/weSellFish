@@ -27,25 +27,28 @@ const Hero = () => {
           -index * 100
         }%] transition ease-[1000ms] brightness-50`}
       >
+        {/* <div
+        className={`col-span-full row-span-full whitespace-nowrap translate-x-[-200%] transition ease-[1000ms] brightness-50`}
+      > */}
         {images.map((image, index) => {
           return (
             <img
               key={index}
               src={image}
               alt=""
-              className=" h-screen w-screen inline-block"
+              className=" h-screen w-screen md:max-h-[700px] inline-block"
             />
           );
         })}
       </div>
 
-      <h2 className="z-1 col-span-full row-start-2 row-end-2 self-start justify-self-center font-(family-name:--font-titles) text-[var(--color-white-smoke)] font-semibold text-6xl sm:text-7xl md:text-9xl">
+      <h2 className="z-1 col-span-full row-start-2 row-end-2 self-start justify-self-center font-(family-name:--font-titles) text-[var(--color-white-smoke)] font-semibold text-6xl sm:text-7xl md:text-8xl">
         weSellFish
       </h2>
       <button
         className="z-1 col-span-full row-start-2 row-end-2 self-center justify-self-center 
       bg-[var(--color-white-smoke)] text-[var(--color-berekley-blue)] 
-      sm:mt-[-2em] md:mt-[3em] md:text-2xl font-(family-name:--font-text) font-extrabold text-xl w-[11em] h-[2em] mt-[-3em] 
+      sm:mt-[-2em] md:mt-[1em] md:text-2xl font-(family-name:--font-text) font-extrabold text-xl w-[11em] h-[2em] mt-[-3em] 
       rounded-[25px] cursor-pointer hover:bg-[#1D3557] hover:text-[#F5F6F4] hover:active:outline-2 hover:outline-offset-3 hover:outline-[var(--color-white-smoke)]"
       >
         find out more!

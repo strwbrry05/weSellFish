@@ -2,13 +2,13 @@ import React from "react";
 
 const ContactMini = () => {
   return (
-    <div className="md:flex">
-      <div className="pt-[5em] pb-[5em] bg-[var(--color-berekley-blue)] text-center">
-        <h3 className="font-(family-name:--font-heading) text-[var(--color-white-smoke)] text-5xl">
+    <div className="md:flex md:flex-row md:w-full">
+      <div className="lg:text-end lg:pr-[8.5em] md:w-[50%] md:pt-[3em] md:pb-[3em] pt-[5em] pb-[5em] bg-[var(--color-berekley-blue)] text-center">
+        <h3 className="md:text-5xl md:mb-3 font-(family-name:--font-heading) text-[var(--color-white-smoke)] text-5xl">
           Contact Us!
         </h3>{" "}
         <button
-          className="md:text-2xl
+          className="md:text-xl
           bg-[var(--color-white-smoke)] text-[var(--color-berekley-blue)] 
             font-(family-name:--font-text) font-extrabold text-lg w-[10em] h-[2em] mt-4 
             rounded-[25px] cursor-pointer hover:outline-2 hover:outline-offset-3 hover:outline-[var(--color-white-smoke)]"
@@ -16,11 +16,19 @@ const ContactMini = () => {
           click here
         </button>
       </div>
-      <div className="pt-[3em] pb-[3em] text-center">
-        <h4 className="text-3xl font-bold">Email</h4>
-        <p className="text-xl">wesellfish@officialemail.com</p>
-        <h4 className="mt-8 text-3xl font-bold">Phone</h4>
-        <p className="text-xl">(000)-000-0000</p>
+      <div className=" md:pt-[2em] md:pb-[2em] pt-[3em] pb-[3em] text-center md:w-[50%] md:mt-0 md:border-b-2 border-berekley-blue">
+        <h4 className="lg:text-start lg:pl-[8.5em] md:text-2xl text-3xl font-bold">
+          Email
+        </h4>
+        <p className="lg:text-start lg:pl-[6.5em] md:text-lg text-xl">
+          wesellfish@officialemail.com
+        </p>
+        <h4 className="lg:text-start lg:pl-[8.5em] md:text-2xl mt-6 text-3xl font-bold">
+          Phone
+        </h4>
+        <p className="lg:text-start lg:pl-[9.5em] md:text-lg text-xl">
+          (000)-000-0000
+        </p>
       </div>
     </div>
   );

@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [sentMessage, setSentMessage] = useState("");
+  const [fName, setfName] = useState("");
+  const [lName, setlName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
   function submitForm(e) {
     e.preventDefault();
+    setSentMessage("Your information has been passed on!");
+    setfName("");
+    setlName("");
+    setEmail("");
+    setPhone("");
+    setMessage("");
+  }
+
+  function setInputFirstName(e) {
+    setfName(e.target.value);
+  }
+  function setInputLastName(e) {
+    setlName(e.target.value);
+  }
+  function setInputEmail(e) {
+    setEmail(e.target.value);
+  }
+  function setInputPhone(e) {
+    setPhone(e.target.value);
+  }
+  function setInputMessage(e) {
+    setMessage(e.target.value);
   }
 
   return (
@@ -32,8 +61,11 @@ const Contact = () => {
               <input
                 className="bg-white-smoke text-black w-full md:w-[85%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
                 name="fName"
+                value={fName}
+                onChange={(e) => setInputFirstName(e)}
                 type="text"
                 placeholder="John"
+                required
               />
             </label>
             <label>
@@ -42,6 +74,8 @@ const Contact = () => {
                 className="bg-white-smoke text-black w-full md:w-[85%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
                 name="lName"
                 type="text"
+                value={lName}
+                onChange={(e) => setInputLastName(e)}
                 placeholder="Smith"
               />
             </label>
@@ -53,7 +87,9 @@ const Contact = () => {
               <input
                 className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
                 name="email"
-                type="text"
+                type="email"
+                value={email}
+                onChange={(e) => setInputEmail(e)}
                 placeholder="email@email.com"
               />
             </label>
@@ -63,6 +99,8 @@ const Contact = () => {
                 className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
                 name="phoneNum"
                 type="text"
+                value={phone}
+                onChange={(e) => setInputPhone(e)}
                 placeholder="999-999-9999"
               />
             </label>
@@ -72,6 +110,8 @@ const Contact = () => {
                 className="bg-white-smoke text-black w-full md:w-[93%] rounded-md pl-3 p-[0.05em] mb-[0.75em]"
                 name="message"
                 rows={5}
+                value={message}
+                onChange={(e) => setInputMessage(e)}
                 placeholder="type message here..."
               />
             </label>
@@ -82,6 +122,11 @@ const Contact = () => {
           >
             Send
           </button>
+          {sentMessage && (
+            <p className="text-center mt-2 text-red-200 italic">
+              {sentMessage}
+            </p>
+          )}
         </form>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaX } from "react-icons/fa6";
 import { GiCirclingFish } from "react-icons/gi";
+import { NavLink } from "react-router";
 
 const NavigationBurger = (props) => {
   return (
@@ -13,18 +14,30 @@ const NavigationBurger = (props) => {
       </button>
       <div className="w-[90%] mt-2 mb-8 border-1 self-center"></div>
       <ul className="w-[100%] flex flex-col justify-center items-center text-2xl font-semibold font-(family-name:--font-text)">
-        <a href="#" className="  ">
-          <li className="mb-5 mt-5">Home</li>
-        </a>
-        <a href="#">
-          <li className="mb-5 mt-5 ">Frozen</li>
-        </a>
-        <a href="#">
-          <li className="mb-5 mt-5">Fresh</li>
-        </a>
-        <a href="#">
-          <li className="mb-5 mt-5 ">Contact</li>
-        </a>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "border-b-2 mb-5" : "mb-5")}
+        >
+          <li className="mt-5">Home</li>
+        </NavLink>
+        <NavLink
+          to="/frozen"
+          className={({ isActive }) => (isActive ? "border-b-2 mb-5" : "mb-5")}
+        >
+          <li className="mt-5 ">Frozen</li>
+        </NavLink>
+        <NavLink
+          to="/fresh"
+          className={({ isActive }) => (isActive ? "border-b-2 mb-5" : "mb-5")}
+        >
+          <li className="mt-5">Fresh</li>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "border-b-2 mb-5" : "mb-5")}
+        >
+          <li className="mt-5 ">Contact</li>
+        </NavLink>
       </ul>
       <div className="w-[90%] mt-8 border-1 self-center"></div>
 

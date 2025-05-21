@@ -1,24 +1,35 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import hero1 from "../assets/images/heidi-bruce-hero.png";
 import hero2 from "../assets/images/hiroko-yoshii-hero.png";
 import hero3 from "../assets/images/karen-kayser-hero.png";
+import { Link } from "react-scroll";
 
 const images = [hero1, hero2, hero3];
 const delay = 10000;
 
 const Hero = () => {
+  const timeoutRef = useRef(null);
   const [index, setIndex] = useState(0);
 
-  // useEffect(() => {
-  //   setTimeout(
-  //     () =>
-  //       setIndex((prevIndex) =>
-  //         prevIndex === images.length - 1 ? 0 : prevIndex + 1
-  //       ),
-  //     delay
-  //   );
-  //   return () => {};
-  // }, [index]);
+  function resetTimeout() {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+  }
+
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(
+      () =>
+        setIndex((prevIndex) =>
+          prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        ),
+      delay
+    );
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
 
   return (
     <div className="grid grid-cols-3 grid-rows-3 m-auto overflow-hidden max-w-full">
@@ -51,7 +62,9 @@ const Hero = () => {
       sm:mt-[-2em] md:mt-[1em] md:text-2xl font-(family-name:--font-text) font-extrabold text-xl w-[11em] h-[2em] mt-[-3em] 
       rounded-[25px] cursor-pointer hover:bg-[#1D3557] hover:text-[#F5F6F4] hover:active:outline-2 hover:outline-offset-3 hover:outline-[var(--color-white-smoke)]"
       >
-        find out more!
+        <Link to="contact" smooth={true} offset={-100}>
+          find out more!{" "}
+        </Link>
       </button>
 
       <div className="z-1 text-center col-start-2 col-end-3 row-start-3 row-end-4 self-end ">
@@ -64,6 +77,9 @@ const Hero = () => {
                   ? "outline-1 outline-[#8E8E8E] bg-[#040A10]"
                   : "bg-[#8E8E8E]"
               }`}
+              onClick={() => {
+                setIndex(idx);
+              }}
             ></div>
           );
         })}

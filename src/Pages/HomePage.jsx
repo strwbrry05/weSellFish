@@ -4,12 +4,15 @@ import MissionCard from "../components/MissionCard";
 import ContactMini from "../components/ContactMini";
 import RecentPictures from "../components/RecentPictures";
 import Map from "../components/Map";
+import { Link, Element } from "react-scroll";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <ContactMini />
+      <Element name="contact">
+        <ContactMini />
+      </Element>
       <div className="mb-[5em] mt-[2em] md:mt-10 lg:mt-10 lg:mb-10 gap-[10px] md:flex md:flex-wrap lg:w-4xl lg:m-auto">
         <MissionCard
           title="Our Mission"

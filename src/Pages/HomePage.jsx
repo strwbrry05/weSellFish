@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import MissionCard from "../components/MissionCard";
 import ContactMini from "../components/ContactMini";
 import RecentPictures from "../components/RecentPictures";
-import Map from "../components/Map";
+import Map from "../components/GMap";
 import { Link, Element } from "react-scroll";
 
 const HomePage = () => {

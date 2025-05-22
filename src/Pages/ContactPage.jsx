@@ -1,6 +1,6 @@
 import React from "react";
 import Contact from "../components/Contact.jsx";
-import Map from "../components/Map.jsx";
+import Map from "../components/GMap.jsx";
 
 const ContactPage = () => {
   return (

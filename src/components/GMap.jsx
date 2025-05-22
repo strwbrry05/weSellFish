@@ -5,20 +5,6 @@ import {
   InfoWindow,
   MarkerF,
 } from "@react-google-maps/api";
-import config from "../config.js";
-
-// const marker = [
-//   {
-//     id: 1,
-//     name: "weSellFish Company",
-//     position: { lat: 33.71215171829491, lng: -117.92979954592 },
-//   },
-//   {
-//     id: 2,
-//     name: "LA Company",
-//     position: { lat: 34.052235, lng: -118.243683 },
-//   },
-// ];
 
 const GMap = () => {
   const containerStyle = {
@@ -35,7 +21,7 @@ const GMap = () => {
 
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: config.API_KEY,
+    googleMapsApiKey: import.meta.env.MY_GMAP_API_KEY,
   });
 
   const [marker, setMarker] = useState([]);

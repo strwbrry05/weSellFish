@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-#KEYS
-src/config.js
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -25,3 +22,7 @@ src/config.js
 *.njsproj
 *.sln
 *.sw?
+*.env
+
+# Local Netlify folder
+.netlify

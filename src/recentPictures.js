@@ -1,10 +1,10 @@
-const picturesArr = ["./src/assets/images/homeRecentImg/rp.png", 
-    "./src/assets/images/homeRecentImg/rp2.png",
-"./src/assets/images/homeRecentImg/rp3.png",
-"./src/assets/images/homeRecentImg/rp4.png",
-"./src/assets/images/homeRecentImg/rp5.png",
-"./src/assets/images/homeRecentImg/rp6.png",
-"./src/assets/images/homeRecentImg/rp7.png",
-"./src/assets/images/homeRecentImg/rp8.png"];
+const picturesArr = ["./src/assets/images/rp.png", 
+    "./src/assets/images/rp2.png",
+"./src/assets/images/rp3.png",
+"./src/assets/images/rp4.png",
+"./src/assets/images/rp5.png",
+"./src/assets/images/rp6.png",
+"./src/assets/images/rp7.png",
+"./src/assets/images/rp8.png"];
 
 export default picturesArr;

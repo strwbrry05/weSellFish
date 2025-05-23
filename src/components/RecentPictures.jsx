@@ -1,5 +1,6 @@
 import React from "react";
 import picturesArr from "../../src/recentPictures.js";
+import rp from "../assets/images/rp.png";
 
 const RecentPictures = () => {
   return (
@@ -17,6 +18,8 @@ const RecentPictures = () => {
          md:gap-6 md:grid md:grid-rows-2 md:grid-cols-4 md:w-[85%] md:m-auto
          xl:w-5xl"
         >
+          <img src={rp} alt="fish" />
+
           {picturesArr.map((img, index) => {
             return (
               <img

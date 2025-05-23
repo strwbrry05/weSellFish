@@ -1,4 +1,4 @@
-const picturesArr = ["src/assets/images/rp.png", 
+const picturesArr = ["../assets/images/rp.png",
     "src/assets/images/rp2.png",
 "/src/assets/images/rp3.png",
 "./src/assets/images/rp4.png",

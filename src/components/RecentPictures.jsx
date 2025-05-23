@@ -1,5 +1,5 @@
 import React from "react";
-import picturesArr from "../recentPictures.js";
+import picturesArr from "../../src/recentPictures.js";
 
 const RecentPictures = () => {
   return (

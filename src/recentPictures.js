@@ -1,4 +1,6 @@
-const picturesArr = ["../assets/images/rp.png",
+import rp from "../src/assets/images/rp.png";
+
+const picturesArr = [{rp},
     "src/assets/images/rp2.png",
 "/src/assets/images/rp3.png",
 "./src/assets/images/rp4.png",

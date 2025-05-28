@@ -39,7 +39,7 @@ const Hero = () => {
         }%] transition ease-[1000ms] brightness-50`}
       >
         {/* <div
-        className={`col-span-full row-span-full whitespace-nowrap translate-x-[-200%] transition ease-[1000ms] brightness-50`}
+        className={`col-span-full row-span-full whitespace-nowrap translate-x-[-100%] transition ease-[1000ms] brightness-50`}
       > */}
         {images.map((image, index) => {
           return (

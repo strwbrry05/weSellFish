@@ -11,7 +11,9 @@ const NavigationBar = (props) => {
         >
           <FiMenu />
         </button>
-        <h1 className="font-(family-name:--font-titles)">weSellFish</h1>
+        <NavLink to="/">
+          <h1 className="font-(family-name:--font-titles)">weSellFish</h1>
+        </NavLink>
         <ul className="hidden md:block md:flex font-medium text-base font-(family-name:--font-text)">
           <NavLink
             to="/"

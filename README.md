@@ -47,6 +47,24 @@ Developed using mobile first development, website is responsive in that it offer
 </span>
 
 ## Potential Improvements
+- NAV: All major NAV components are in working order, the only change I would make here is to make sure the cursor is a pointer and not its default cursor shape.
+- FOOTER: No functional design change, only aesthetic. The color of the footer is too light for my liking, I would prefer a darker color in order to convey a more professional and mature look for the company website.
+
+
+- HERO: While the automatic slideshow techinically works, I will be the first to admit that it is rather laggy and slow to move. In order to fix this, I would use a npm slideshow library that would streamline the process, in turn resulting in a better, and more intuitive, slideshow overall.
+- RECENT_PICTURES: I would make it so if a customer/user wishes to view the information of a specific product, clicking on that pictrue redirects you to that product on its respective forzen/fresh page. Alternatively, if a customer/user hovers over any image, information on that product would appear overlayed such as price, name, and whether the item was currently in stock.
+
+
+- MAP: I would go back to the google map API and learn how to add a pin to the embedded map. At the time, I wasn't able to figure it out, and the google API cost money to use. I'd find a different npm library and attempt to do the same.
+
+
+- FROZEN/FRESH: I'd make each product component slightly smaller to allow more than three per row; perhaps four or five per row.
+
+
+- CONTACT: Since there would be multiple salesmen at the company, I would like to allow the customer to choose from which salesman they would like to order from. Customers enjoy human to human connection, so providing these options would allow customers to know who exactly is in charge of their order.
+
+
+- RESPONSIVE: I'd make the nav components smaller and would add a shadow to anything outside of the open burger menu. Perhaps change the placement of the nav title to the center rather than have it stick to the left corner.
 
 ## Built Using
 - HTML

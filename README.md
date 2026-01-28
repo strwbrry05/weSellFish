@@ -4,7 +4,7 @@
 ![Home](weSellFish_files/projectGIF.gif)
 
 ## About the Project
-First project created after learning the basics of React development. I decided on a company website because of its intuitive and straightforward design. Through the course of this project, I was able to become familiar with both React tools and Tailwind for css. While I agree that the page itself is faily simple and unimagnative, I find it difficult to frown upon this one as it was my first React project. I remember how accomplished I felt after finishing coding this one, and it allowed me to gain enough confidence to keep going and create even crazier/more creative ideas.
+First project created after learning the basics of React development. I decided on a company website because of its intuitive and straightforward design. Through the course of this project, I was able to become familiar with both React tools and Tailwind for css. While I agree that the page itself is fairly simple and unimaginative, I find it difficult to frown upon this one as it was my first React project. I remember how accomplished I felt after finishing coding this one, and it allowed me to gain enough confidence to keep going and create even crazier/more creative ideas.
 
 ### Nav + Footer
 Nav is straightforward, contains the website title on the left corner and the nav components on the right. When each nav component is hovered over a quick animation plays that makes the component appear to be underlined/selected.

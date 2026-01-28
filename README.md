@@ -25,6 +25,13 @@
 
 
 ## Responsive View
+<span>
+<img src="weSellFish_files/mobile_home.png" width="250"/>
+<img src="weSellFish_files/mobile_nav.png" width="250"/>
+<img src="weSellFish_files/mobile_info.png" width="250"/>
+<img src="weSellFish_files/mobile_product.png" width="250"/>
+<img src="weSellFish_files/mobile_contact.png" width="250"/>
+</span>
 
 ## Potential Improvements
 

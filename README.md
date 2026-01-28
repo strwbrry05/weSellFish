@@ -1,6 +1,28 @@
 # we sell fish
+![Home](weSellFish_files/projectGIF.gif)
 
 ## About the Project
+
+### Nav + Footer
+<img src="weSellFish_files/nav.png" width="650"/>
+<img src="weSellFish_files/footer.png" width="650"/>
+
+### Home Page
+<img src="weSellFish_files/about_hero.png" width="650"/>
+<img src="weSellFish_files/about_info.png" width="650"/>
+<img src="weSellFish_files/about_recent.png" width="650"/>
+<img src="weSellFish_files/about_map.png" width="650"/>
+
+
+### Frozen / Fresh Page
+<img src="weSellFish_files/product1.png" width="650"/>
+<img src="weSellFish_files/product2.png" width="650"/>
+
+
+### Contact
+<img src="weSellFish_files/contact1.png" width="650"/>
+<img src="weSellFish_files/contact2.png" width="650"/>
+
 
 ## Responsive View
 

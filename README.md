@@ -1,5 +1,5 @@
 # we sell fish
-[2025] Web app mock-up created in order to emmulate a wholesale company website, whos main product includes a variety of fish. A simple yet effective design, this site demonstrates understanding of web development principles, design aesthetics, and React coding essentials.
+[2025] Web app mock-up created in order to emulate a wholesale company website, whos main product includes a variety of fish. A simple yet effective design, this site demonstrates understanding of web development principles, design aesthetics, and React coding essentials.
 
 ![Home](weSellFish_files/projectGIF.gif)
 
